@@ -1,0 +1,28 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+
+.buttonByAman{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    width: max-content;
+
+    cursor: pointer;
+
+    transition: all 300ms ease;
+}
+
+.navyButton{
+    background-color: rgb(1, 1, 10);
+    color: #fff;
+}
