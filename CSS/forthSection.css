@@ -1,0 +1,143 @@
+#forthSection {
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.forthSectionContainer {
+    position: relative;
+    /* border: 2px solid red; */
+    width: max-content;
+
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 55rem;
+    height: max-content;
+}
+
+
+.forthSectionContainer img {
+    position: relative;
+    z-index: 1;
+    filter: brightness(60%);
+    width: 100%;
+}
+
+
+
+.forthSectionContainer .content {
+    position: absolute;
+    z-index: 2;
+    text-transform: capitalize;
+
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+}
+
+.forthSectionContainer button {
+    position: absolute;
+    z-index: 2;
+    top: 65%;
+}
+
+
+
+
+@media screen and (max-width : 1000px) {
+    .forthSectionContainer {
+        width: 45rem;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .forthSectionContainer {
+        width: 35rem;
+    }
+
+
+    .forthSectionContainer .content {
+        font-size: 3vw;
+        top: 35%;
+    }
+
+    .forthSectionContainer button {
+        top: 60%;
+    }
+
+}
+
+@media screen and (max-width : 800px) {
+
+    #forthSection {
+        padding: 1rem;
+    }
+
+    .forthSectionContainer {
+        width: 95%;
+    }
+
+
+    .forthSectionContainer .content {
+        font-size: 3vw;
+        top: 35%;
+    }
+
+    .forthSectionContainer button {
+        top: 60%;
+    }
+
+}
+
+@media screen and (max-width : 600px) {
+
+
+
+    .forthSectionContainer .content {
+        font-size: 4vw;
+        top: 35%;
+    }
+
+    .forthSectionContainer button {
+        top: 65%;
+    }
+
+}
+
+@media screen and (max-width : 600px) {
+
+    #forthSection {
+        padding: 0;
+    }
+
+    .forthSectionContainer {
+        padding: 0;
+        width: 100%;
+    }
+
+
+    .forthSectionContainer {
+        border-radius: 0;
+    }
+
+    .forthSectionContainer .content {
+        font-size: 1.3rem;
+        top: 25%;
+    }
+
+    .forthSectionContainer button {
+        top: 58%;
+    }
+
+}

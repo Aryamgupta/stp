@@ -1,0 +1,280 @@
+#secondSection {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2rem;
+
+    padding: 3rem;
+
+    background-color: var(--thirdSection);
+}
+
+.tagLine {
+    display: flex;
+
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.line {
+    width: 4rem;
+    background-color: black;
+    height: 2px;
+}
+
+.tag {
+    text-transform: uppercase;
+}
+
+
+
+.secondSectionContainer{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+
+
+
+.secondSectionBox {
+    display: grid;
+    grid-template-columns: 35rem 17rem;
+    column-gap: 1rem;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+
+.secondSectionLeftBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    row-gap: 1rem;
+
+}
+
+.secondSectionHeading {
+    font-size: 38px;
+}
+
+
+.secondSectionRightBox {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.sectionImageContainer{
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.sectionImageContainer img{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    box-shadow: 3px 8px 10px 1px rgba(133, 133, 133, 0.265);
+}
+
+
+
+
+
+.secondSectionContentContainer{
+    /* border: 2px solid red; */
+    margin: 1rem;
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(2 ,minmax(auto,28rem));
+    column-gap: 2rem;
+    justify-content: space-evenly;
+
+    background-color: #fff;
+    border-radius: 0.4rem;
+    transition: all 200ms ease;
+}
+
+.secondSectionContentContainer:hover{
+    box-shadow: 3px 8px 10px 1px rgba(133, 133, 133, 0.465);
+}
+
+
+
+
+
+
+.secondSectionContentContainer .tag{
+    font-size: 0.9rem;
+    /* font-weight: 700; */
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
+}
+
+.secondSectionContentContainerBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.5rem;
+}
+
+.secondSectionContentContainerHeading{
+    font-size: 34px;
+}
+
+.secondSectionContentContainerContent{
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    color: rgb(86, 86, 86);
+    /* font-weight: lighter; */
+}
+
+
+
+
+@media screen and (max-width : 900px) {
+
+    #secondSection {
+
+        padding: 1.5rem;
+    
+    }
+
+    .secondSectionBox {
+        grid-template-columns: 20rem 18rem;
+    }
+
+
+    .secondSectionHeading {
+        font-size: 28px;
+    }
+
+    .secondSectionContent {
+        font-size: 15px;
+    }
+}
+
+
+
+@media screen and (max-width : 800px) {
+    #secondSection > .tagLine{
+        margin-top: 5rem;
+    }
+}
+@media screen and (max-width : 760px) {
+    .secondSectionContentContainer{
+        margin: 0rem;
+    }
+
+    .secondSectionContentContainerHeading{
+        font-size: 3.5vw;
+    }
+
+}
+
+
+@media screen and (max-width : 680px) {
+
+    .secondSectionBox {
+        grid-template-columns: 1fr;
+    }
+
+    .secondSectionRightBox {
+        display: none;
+    }
+
+
+    .secondSectionContentContainer{
+    
+        grid-template-columns: repeat(1 ,minmax(auto,28rem));
+        row-gap: 3rem;
+
+    }
+
+    .secondSectionContentContainerHeading{
+        font-size: 5.5vw;
+    }
+}
+
+
+
+@media screen and (max-width : 480px) {
+
+    #secondSection {
+        padding: 1.5rem 0.8rem;
+    }
+
+    .secondSectionHeading {
+        font-size: 7vw;
+    }
+
+
+    .secondSectionContentContainer .tag{
+        font-size: 0.7rem;
+    }
+    
+
+    #secondSection{
+        padding: 0;
+    }
+
+    .secondSectionHeading{
+        font-size: 7vw;
+    }
+    .secondSectionContainer{
+        padding: 1rem;
+    }
+    .secondSectionContentContainer{
+        padding: 1rem;
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+}
+
+
+
+
+@media screen and (max-width : 350px) {
+    .secondSectionContent {
+        font-size: 14px;
+    }
+
+    .secondSectionHeading {
+        font-size: 8vw;
+    }
+
+
+
+
+    .secondSectionContentContainer{
+        /* padding: 1rem; */
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+
+    }
+
+    .secondSectionContentContainerHeading{
+        font-size: 7vw;
+    }
+
+}

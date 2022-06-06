@@ -1,0 +1,217 @@
+
+#thirdSection {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2rem;
+
+    padding: 3rem;
+
+    background-color: var(--thirdSection);
+}
+
+.tagLine {
+    display: flex;
+
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.line {
+    width: 4rem;
+    background-color: black;
+    height: 2px;
+}
+
+.tag {
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+.thirdSectionBox {
+    display: grid;
+    grid-template-columns: 35rem 17rem;
+    column-gap: 1rem;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+
+.thirdSectionLeftBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    row-gap: 1rem;
+    /* border: 2px solid red; */
+}
+
+.thirdSectionHeading {
+    font-size: 38px;
+}
+
+
+.thirdSectionContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1.4rem;
+
+}
+
+
+.thirdSectionPoint{
+    display: flex;
+    column-gap: 0.8rem;
+    align-items: stretch;
+}
+
+.pointLeft{
+    font-size: 1rem;
+    
+    border-radius: 0.3rem;
+    width:  1.5rem;
+    height: 1.5rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 0.2rem;
+
+    background-color: var(--primaryColor);
+    color: var(--thirdSection);
+}
+
+
+.pointRight{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.1rem;
+}
+
+.pointHead{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.pointContent{
+    font-size: 16px;
+}
+
+
+
+
+
+
+.thirdSectionRightBox {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.thirdSectionRightBox img {
+    position: relative;
+    /* height: 100%; */
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 900px) {
+
+    .thirdSectionBox {
+        grid-template-columns: 20rem 18rem;
+    }
+
+
+    .thirdSectionHeading {
+        font-size: 28px;
+    }
+
+
+    .pointLeft{
+        font-size: 0.9rem;
+        width:  1.5rem;
+        height: 1.5rem;
+        margin-top: 0.1rem;
+    }
+    
+    
+    .pointHead{
+        font-size: 16px;
+    }
+    
+    .pointContent{
+        font-size: 12px;
+    }
+    
+
+
+}
+
+
+
+@media screen and (max-width : 680px) {
+
+    .thirdSectionBox {
+        grid-template-columns: 1fr;
+    }
+
+    .thirdSectionRightBox {
+        display: none;
+    }
+
+    .pointLeft{
+        padding: 0.5rem;
+    }
+
+    .pointHead{
+        font-size: 18px;
+    }
+
+    .pointContent{
+        font-size: 15px;
+    }
+
+}
+
+
+
+@media screen and (max-width : 480px) {
+
+    #thirdSection {
+        padding: 1.5rem 1.8rem;
+    }
+
+    .thirdSectionHeading {
+        font-size: 7vw;
+    }
+
+}
+
+
+
+
+@media screen and (max-width : 350px) {
+
+    .thirdSectionHeading {
+        font-size: 8vw;
+    }
+
+}

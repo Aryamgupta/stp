@@ -1,0 +1,144 @@
+#fourthSection {
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fourthSectionContainer {
+    position: relative;
+    /* border: 2px solid red; */
+    width: max-content;
+
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 55rem;
+    height: max-content;
+
+    background-color: #000;
+}
+
+
+.thirdSectionContainer img {
+    position: relative;
+    z-index: 1;
+    filter: brightness(60%);
+    width: 100%;
+}
+
+
+
+.thirdSectionContainer .content {
+    position: absolute;
+    z-index: 2;
+    text-transform: capitalize;
+
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+}
+
+.thirdSectionContainer button {
+    position: absolute;
+    z-index: 2;
+    top: 65%;
+}
+
+
+
+
+@media screen and (max-width : 1000px) {
+    .thirdSectionContainer {
+        width: 45rem;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .thirdSectionContainer {
+        width: 35rem;
+    }
+
+
+    .thirdSectionContainer .content {
+        font-size: 3vw;
+        top: 35%;
+    }
+
+    .thirdSectionContainer button {
+        top: 60%;
+    }
+
+}
+
+@media screen and (max-width : 800px) {
+
+    #fourthSection {
+        padding: 1rem;
+    }
+
+    .thirdSectionContainer {
+        width: 95%;
+    }
+
+
+    .thirdSectionContainer .content {
+        font-size: 3vw;
+        top: 35%;
+    }
+
+    .thirdSectionContainer button {
+        top: 60%;
+    }
+
+}
+
+@media screen and (max-width : 600px) {
+
+
+
+    .thirdSectionContainer .content {
+        font-size: 4vw;
+        top: 35%;
+    }
+
+    .thirdSectionContainer button {
+        top: 65%;
+    }
+
+}
+
+@media screen and (max-width : 600px) {
+
+    #fourthSection {
+        padding: 0;
+    }
+
+    .thirdSectionContainer {
+        padding: 0;
+        width: 100%;
+    }
+
+
+    .thirdSectionContainer {
+        border-radius: 0;
+    }
+
+    .thirdSectionContainer .content {
+        font-size: 1.3rem;
+        top: 25%;
+    }
+
+    .thirdSectionContainer button {
+        top: 58%;
+    }
+
+}
