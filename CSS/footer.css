@@ -1,0 +1,219 @@
+footer {
+    display: grid;
+    grid-template-columns: 2.2fr 1.4fr;
+    column-gap: 7vw;
+
+    background-color: #000;
+
+    padding: 4rem 3rem;
+    /* border: 2px solid red; */
+}
+
+
+.foterLeft {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+}
+
+.footerLogo {
+    height: 4rem;
+}
+
+
+.footerLogo img {
+    height: 100%;
+}
+
+
+
+
+.footerBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1rem;
+    /* border: 2px solid red; */
+}
+
+.footerTops {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.footerBlock a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.674);
+    font-weight: 300;
+    font-size: 0.8rem;
+    transition: all 200ms ease;
+}
+
+.footerBlock a:hover {
+    color: #fff;
+}
+
+.contactIcons{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.footerRight {
+
+    /* border: 2px solid red; */
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2rem;
+}
+
+
+.footerSubscribeTag {
+    color: #fff;
+    font-size: 900;
+    font-size: 34px;
+}
+
+
+.footerSubscribeForm {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footerSubscribeForm input {
+    border: 1px solid rgba(255, 255, 255, 0.674);
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: #fff;
+
+}
+
+.footerSubscribeForm input:focus,
+.footerSubscribeForm input:active {
+    outline: none;
+}
+
+.footerSubscribeForm button {
+    padding: 0.6rem;
+    transform: translateX(-5px);
+    transition: all 200ms ease;
+}
+.footerSubscribeForm button:hover{
+    background-color: rgb(207, 207, 207);
+}
+
+
+.footerSubscribeForm * {
+    height: 2.4rem;
+}
+
+
+
+#copyright{
+    background-color: #000;
+    padding: 2rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.copyright{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 950px) 
+{
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+
+    .footerRight {
+        display: none;
+    }
+    
+}
+
+
+
+@media screen and (max-width : 600px) {
+
+    footer{
+        padding: 4rem 0.5rem;
+    }
+
+
+    .footerLogo{
+        display: none;
+    }
+
+    .foterLeft{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        row-gap: 2rem;
+    }
+
+    .contactNames{
+        display: none;
+    }
+
+    .footerBlock {
+        width: max-content;
+        margin-left: 1rem;
+    }
+
+       
+
+    .footerConnect{
+        display: flex;
+        flex-direction: row;
+        column-gap: 1rem;
+        align-items: center;
+    }
+
+    .contactIcons{
+        display: flex;
+        font-size: 1rem !important;
+    }
+
+    #copyright{
+        padding-top: 0rem;
+    }
+    
+    .copyright{
+        color: #fff;
+    }
+    
+
+    .copyright{
+        font-size: 0.8rem;
+    }
+}
