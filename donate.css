@@ -1,0 +1,146 @@
+/* head sectiion  */
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 34px 3px 28px;
+    width: 76%;
+    display: flex;
+    margin: auto; 
+}
+
+.head_one {
+    font-size: 41px;
+    width: 51vh;
+    font-weight: bold;
+}
+
+.head_two {
+    width: 52vh;
+    margin-top: 10px;
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#btn {
+    height: 6vh;
+    width: 18vh;
+    background: #70C174;
+    display: flex;
+    text-align: center;
+    line-height: 6vh;
+    justify-content: center;
+    font-size: 3vh;
+    border-radius: 6px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+}
+
+.don_img {
+    height: 27vh;
+    width: 37vh;
+}
+
+.don_img img{
+    height: 100%;
+    width: 100%;
+}
+
+.donation{
+    background-color: #EFF7F2;
+}
+
+/* title */
+.don_tile{
+    margin-top: 6vh;
+    font-weight: 700;
+}
+.don_tile span {
+    position: relative;
+    margin-left: 23vh;
+    z-index: 2;
+}
+
+.don_tile span::after,
+.don_tile span::before {
+    position: absolute;
+    content: '';
+    bottom: 8px;
+    left: -6vh;
+    height: 3px;
+    width: 6vh;
+    background: rgb(0, 0, 0);
+}
+
+
+/* pay */
+.pay {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    justify-content:center;
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+
+.qr{
+    width: 39vh;
+    height: 39vh;
+}
+
+.qr img{
+    height: 100%;
+    width: 100%;
+}
+
+.number {
+    background-color: #70C174;
+    height: 11vh;
+    width: 31vh;
+    line-height: 28px;
+    margin-top: 22vh;
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+    justify-content: center;
+}
+
+.gpay {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+/* media query */
+  
+@media (max-width:692px) {
+    .main { 
+        display: flex;
+        margin:auto;
+        flex-direction: column-reverse;
+    }
+    .head_one {
+        font-size: 25px;
+        width: 41vh;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .head_two {
+        width: 39vh;
+        text-align: center;
+    }
+
+    #btn {
+        margin: auto;
+    }
+
+    .pay {
+        flex-direction: column;
+    }
+ 
+}
+
+ 
+ 
